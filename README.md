@@ -13,9 +13,18 @@
 
 ## 快速上手
 
+> 📁 **关于 `~`**：本文档里 `~` 表示你的用户目录，Claude Code 把所有对话存在它下面的 `.claude/projects/` 里。各系统对应的实际路径：
+>
+> - **Windows**：`C:\Users\<你的用户名>\.claude\projects\`（例如 `C:\Users\111\.claude\projects\`）
+>   - 在文件资源管理器地址栏直接输入 `%USERPROFILE%\.claude\projects` 也能跳过去
+> - **macOS**：`/Users/<你的用户名>/.claude/projects/`
+> - **Linux**：`/home/<你的用户名>/.claude/projects/`
+>
+> `.claude` 文件夹默认是隐藏的，Windows 资源管理器里要先在"查看 → 显示 → 隐藏的项目"打勾才能看到。
+
 ### 用 GUI 查看器（最常用）
 
-打包好的 Windows 单目录分发：双击 `claudecode-backup-viewer.exe` 即可。第一次打开如果默认 `~/.claude/projects/` 找不到，点左侧"更换"指你的实际路径。
+打包好的 Windows 单目录分发：双击 `claudecode-backup-viewer.exe` 即可。第一次打开如果默认 `~/.claude/projects/` 找不到（比如 Claude Code 装在别的位置或者你换了电脑），点左侧"更换"指你的实际路径。
 
 从源码运行：
 

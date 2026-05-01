@@ -13,9 +13,18 @@
 
 ## Quick start
 
+> 📁 **About `~`**: throughout this README, `~` means your home directory. Claude Code stores every conversation under `.claude/projects/` inside it. The actual path on each OS:
+>
+> - **Windows**: `C:\Users\<your-username>\.claude\projects\` (e.g. `C:\Users\111\.claude\projects\`)
+>   - Tip: paste `%USERPROFILE%\.claude\projects` into File Explorer's address bar to jump there
+> - **macOS**: `/Users/<your-username>/.claude/projects/`
+> - **Linux**: `/home/<your-username>/.claude/projects/`
+>
+> `.claude` is a hidden folder by default — on Windows enable **View → Show → Hidden items** in File Explorer to see it.
+
 ### GUI viewer (most common)
 
-For the packaged Windows distribution: double-click `claudecode-backup-viewer.exe`. On first launch, if the default `~/.claude/projects/` doesn't exist, click **更换** ("Change") in the sidebar and pick the right folder.
+For the packaged Windows distribution: double-click `claudecode-backup-viewer.exe`. On first launch, if the default `~/.claude/projects/` doesn't exist (e.g. Claude Code lives elsewhere, or you're on a different machine), click **更换** ("Change") in the sidebar and pick the right folder.
 
 From source:
 
