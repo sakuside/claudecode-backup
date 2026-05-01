@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>claudecode-backup viewer</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/vendor/atom-one-light.min.css">
+  <script src="/static/vendor/marked.min.js"></script>
+  <script src="/static/vendor/highlight.min.js"></script>
+</head>
+<body>
+  <aside id="sidebar">
+    <header>
+      <h1>claudecode-backup</h1>
+      <div id="project-picker" class="picker">
+        <button id="project-button" type="button" class="picker-button">
+          <span id="project-button-label" class="picker-label">加载中…</span>
+          <span class="picker-caret">▾</span>
+        </button>
+        <div id="project-menu" class="picker-menu" hidden></div>
+      </div>
+      <div class="projects-dir">
+        <span id="projects-dir-path" class="projects-dir-path" title=""></span>
+        <button id="projects-dir-change" type="button" class="link-button">更换</button>
+      </div>
+    </header>
+    <div id="session-list"></div>
+  </aside>
+  <main id="main">
+    <header id="chat-header">
+      <div id="chat-title">选择左侧的会话</div>
+      <div id="chat-controls">
+        <div class="font-controls" title="调整聊天字号">
+          <button id="font-smaller" type="button">A-</button>
+          <span id="font-size-label">14px</span>
+          <button id="font-larger" type="button">A+</button>
+        </div>
+        <button id="image-jump" type="button" hidden>📷 <span id="image-jump-label"></span></button>
+        <div id="chat-meta"></div>
+      </div>
+    </header>
+    <div id="chat" class="chat empty"></div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
